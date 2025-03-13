@@ -4,8 +4,8 @@
     <!--用来自定义一些变量-->
     <Properties>
         <!--变量定义-->
-        <Property name="myPattern" value="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
-        <Property name="dir_url">d:/logs</Property>
+        <Property name="myPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-3level %logger{1024} - %msg%n"/>
+        <Property name="dir_url">/Users/hanhongguang/Documents/练习/spring/spring-study/logs</Property>
     </Properties>
     <!--使用Appenders元素可以将日志事件数据写到各种目标位置-->
     <Appenders>
@@ -13,7 +13,9 @@
         <Console name="ConsoleAppend" target="SYSTEM_OUT">
             <!-- 默认打印格式 -->
 <!--            按照日期打印日志-->
-            <PatternLayout pattern="1111%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout>
+                <pattern>${myPattern}</pattern>
+            </PatternLayout>
         </Console>
         <!-- 打印到日志文件上 -->
         <File name="FileAppend" fileName="${dir_url}/fileLog.log" bufferedIO="true" immediateFlush="true">
