@@ -1,0 +1,4 @@
+2025-03-13 21:53:05.552 [main] DEBUG org.springframework.context.support.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5a3bc7ed
+2025-03-13 21:53:05.715 [main] DEBUG org.springframework.beans.factory.xml.XmlBeanDefinitionReader - Loaded 1 bean definitions from class path resource [bean.xml]
+2025-03-13 21:53:05.741 [main] DEBUG org.springframework.beans.factory.support.DefaultListableBeanFactory - Creating shared instance of singleton bean 'main'
+2025-03-13 21:53:05.782 [main] INFO TestCreateMain - ### 执行调用----
