@@ -8,6 +8,5 @@ public class Main {
         // 可查看 IntelliJ IDEA 对于如何修正该问题的建议。
         System.out.printf("Hello and welcome!");
 
-
     }
 }
